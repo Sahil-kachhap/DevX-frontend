@@ -1,8 +1,8 @@
-import { Box, Button, Heading, HStack, Image, Stack, Text, VStack } from '@chakra-ui/react'
+import { Box, Button, Heading, HStack, Stack, Text, VStack } from '@chakra-ui/react'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './home.css'
-import vg from "../../assets/images/logo.jpg";
+// import vg from "../../assets/images/logo.jpg";
 import {CgGoogle, CgYoutube} from "react-icons/cg";
 import {SiCoursera, SiUdemy} from "react-icons/si";
 import {DiAws} from "react-icons/di";
@@ -17,9 +17,9 @@ const Home = () => {
            alignItems="center"
            spacing={['16', '56']}
          >
-            <VStack width={'full'}  alignItems={['center', 'flex-end']}>
+            <VStack width={'full'}  alignItems={['center', 'flex-end']} spacing={'8'}>
                 <Heading children="LEARN FROM THE EXPERTS" size={'2xl'} />
-                <Text children="Find Valuable content at reasonable price"/>
+                <Text textAlign={['center', 'left']} fontSize={'2xl'} fontFamily={'cursive'} children="Find Valuable content at reasonable price"/>
                 <Link to="/courses">
                     <Button size={"lg"} colorScheme="yellow">Explore Now</Button>
                 </Link> 
