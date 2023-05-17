@@ -6,6 +6,8 @@ import './home.css'
 import {CgGoogle, CgYoutube} from "react-icons/cg";
 import {SiCoursera, SiUdemy} from "react-icons/si";
 import {DiAws} from "react-icons/di";
+import intro from '../../assets/videos/intro.mp4'
+
 
 const Home = () => {
   return <section className='home'>
@@ -43,7 +45,7 @@ const Home = () => {
       </Box>
 
       <div className='container2'>
-          <video autoPlay controls  controlsList='nodownload nofullscreen noremoteplayback' disablePictureInPicture disableRemotePlayback></video>
+          <video src={intro} autoPlay controls  controlsList='nodownload nofullscreen noremoteplayback' disablePictureInPicture disableRemotePlayback></video>
       </div>
   </section>
 }

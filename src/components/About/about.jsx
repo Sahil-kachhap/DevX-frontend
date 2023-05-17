@@ -3,6 +3,8 @@ import React from 'react'
 import { RiSecurePaymentFill } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
 import termsAndCondition from '../../assets/docs/termsAndCondition.js'
+import intro from '../../assets/videos/intro.mp4'
+
 
 const Founder = () => (
     <Stack direction={["column", "row"]} spacing={['4', '16']} padding={'8'}>
@@ -19,7 +21,7 @@ const Founder = () => (
 
 const VideoPlayer = () => (
     <Box>
-        <video autoPlay controls controlsList='nodownload nofullscreen noremoteplayback' disablePictureInPicture disableRemotePlayback></video>
+        <video src={intro} autoPlay controls controlsList='nodownload nofullscreen noremoteplayback' disablePictureInPicture disableRemotePlayback></video>
     </Box>
 );
 
